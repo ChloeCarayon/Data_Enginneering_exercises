@@ -1,13 +1,24 @@
 {
-  "name": "project-nodejs-mysql",
+  "name": "nodejs_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exercise Data Engineering",
   "main": "app.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChloeCarayon/Data_Enginneering_exercises.git"
+  },
+  "author": "chloe.carayon@efrei.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChloeCarayon/Data_Enginneering_exercises/issues"
+  },
+  "homepage": "https://github.com/ChloeCarayon/Data_Enginneering_exercises#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "mysql2": "^2.2.5"
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3"
   }
 }
