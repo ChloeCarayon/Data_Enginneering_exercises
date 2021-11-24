@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/app/
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "test"
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+      - mysql_config:/etc/mysql
+
+volumes:
+  mysql:
+  mysql_config:
