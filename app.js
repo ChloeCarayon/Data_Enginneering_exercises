@@ -53,7 +53,6 @@ app.get('/', (req, res) => {
     });
 });
 
-connection.end();
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
